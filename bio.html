@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learner Bio | Robot Modeling | KCIS Virtual Learning</title>
+<meta name="description" content="Austin, Grade 12: a short learner bio for Grade 10 students deciding whether to take Virtual Learning &amp; Development.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+<!-- Marquee -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span class="marquee__item">ROBOTICS FOUNDATIONS I · ROBOT MODELING · KCIS VIRTUAL LEARNING &amp; DEVELOPMENT ·</span>
+    <span class="marquee__item">ROBOTICS FOUNDATIONS I · ROBOT MODELING · KCIS VIRTUAL LEARNING &amp; DEVELOPMENT ·</span>
+    <span class="marquee__item">ROBOTICS FOUNDATIONS I · ROBOT MODELING · KCIS VIRTUAL LEARNING &amp; DEVELOPMENT ·</span>
+    <span class="marquee__item">ROBOTICS FOUNDATIONS I · ROBOT MODELING · KCIS VIRTUAL LEARNING &amp; DEVELOPMENT ·</span>
+  </div>
+</div>
+
+<!-- Nav -->
+<header class="nav">
+  <div class="nav__inner">
+    <a class="logo-mark" href="index.html">
+      <span class="logo-mark__badge">R</span>
+      Robot Modeling
+    </a>
+    <nav class="pill-nav" aria-label="Primary">
+      <a class="pill-nav-btn" href="index.html">Home</a>
+      <a class="pill-nav-btn" href="course-log.html">Course Log</a>
+      <a class="pill-nav-btn" href="journal.html">Reflection Journal</a>
+      <a class="pill-nav-btn" href="bio.html" aria-current="page">Learner Bio</a>
+      <a class="pill-nav-btn" href="evidence.html">Evidence</a>
+    </nav>
+    <a class="cta-filled" href="course-log.html">View Course Log</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero hero--short band-sky section-pad">
+    <div class="hero__stage">
+
+      <svg class="ribbon" viewBox="0 0 1200 520" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <filter id="grain" x="-20%" y="-20%" width="140%" height="140%">
+            <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+            <feColorMatrix in="noise" type="matrix"
+              values="0 0 0 0 0
+                      0 0 0 0 0
+                      0 0 0 0 0
+                      0 0 0 0.06 0" result="fadedNoise"/>
+            <feComposite in="fadedNoise" in2="SourceAlpha" operator="in" result="clippedNoise"/>
+            <feMerge>
+              <feMergeNode in="SourceGraphic"/>
+              <feMergeNode in="clippedNoise"/>
+            </feMerge>
+          </filter>
+        </defs>
+        <path d="M 1160 380 C 940 480, 780 120, 580 180 S 240 420, 40 140"
+              fill="none" stroke="#000000" stroke-width="92" stroke-linecap="round"/>
+        <path d="M 1160 380 C 940 480, 780 120, 580 180 S 240 420, 40 140"
+              fill="none" stroke="#4da2ff" stroke-width="80" stroke-linecap="round"
+              filter="url(#grain)"/>
+      </svg>
+
+      <div class="sticker" style="top:12%; right:8%; width:70px; height:70px; border-radius:20px; background:var(--color-mint-pop); transform:rotate(10deg);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.8"><path d="M5 12.5 10 17 19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div class="sticker" style="bottom:14%; left:9%; width:64px; height:64px; border-radius:1600px; background:var(--color-ember); transform:rotate(-10deg);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.6"><circle cx="12" cy="12" r="3.2"/><path d="M12 3v2.4M12 18.6V21M21 12h-2.4M5.4 12H3M18.1 5.9l-1.7 1.7M7.6 16.4l-1.7 1.7M18.1 18.1l-1.7-1.7M7.6 7.6 5.9 5.9" stroke-linecap="round"/></svg>
+      </div>
+
+      <span class="eyebrow" style="position:relative; z-index:2;">Learner Bio</span>
+      <h1 class="display"><span>AUSTIN</span></h1>
+      <p class="tagline">A short profile for Grade 10 students deciding whether to take Virtual Learning &amp; Development, and what to expect if they do.</p>
+    </div>
+  </section>
+
+  <!-- BIO -->
+  <section class="band-white section-pad">
+    <div class="wrap bio">
+
+      <aside class="bio-id">
+        <div class="avatar" aria-hidden="true">A</div>
+        <h2>Austin</h2>
+        <p class="bio-id__grade">Grade 12</p>
+        <a class="btn-ghost" style="display:block; text-align:center; padding:10px 16px; font-size:12px;" href="https://www.edx.org/learn/robotics/universita-degli-studi-di-napoli-federico-ii-robotics-foundations-i-robot-modeling" target="_blank" rel="noopener">See my course on edX ↗</a>
+      </aside>
+
+      <div class="bio-answers">
+
+        <!-- EDIT: check this still sounds like you -->
+        <div class="bio-card bio-card--wide" style="background:var(--color-lavender);">
+          <span class="bio-card__label">As a learner</span>
+          <p>I'd rather understand how something works underneath than memorize the answer, which is why I picked a course on the math behind robot arms instead of something I already knew.</p>
+        </div>
+
+        <div class="bio-card">
+          <span class="bio-card__label">Course I took through VLD</span>
+          <p>Robotics Foundations I: Robot Modeling, a self-paced edX course from the Università degli Studi di Napoli Federico II.</p>
+          <p>I haven't switched courses so far.</p>
+        </div>
+
+        <!-- EDIT: replace with what you were actually after -->
+        <div class="bio-card">
+          <span class="bio-card__label">What I hoped to gain</span>
+          <p>A real look at robotics before university, and practice running my own learning without someone checking on me.</p>
+        </div>
+
+        <!-- EDIT: swap in a quote you'd actually say out loud -->
+        <div class="bio-card bio-card--wide bio-card--quote">
+          <span class="bio-card__label">My quote</span>
+          <blockquote>"It always seems impossible until it's done."
+            <cite>Nelson Mandela</cite>
+          </blockquote>
+        </div>
+
+        <!-- EDIT: use the one thing you wish someone had told you in week one -->
+        <div class="bio-card bio-card--wide" style="background:var(--color-sky-wash);">
+          <span class="bio-card__label">My advice for a Grade 10 student starting this course</span>
+          <p>Write your journal entry the same day. If you wait a week, it's hard to say anything specific, and the entries are worth the most when they are.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer__inner">
+    <span>Robotics Foundations I · Robot Modeling · KCIS Virtual Learning &amp; Development</span>
+    <a href="#top">Back to top ↑</a>
+  </div>
+</footer>
+
+</body>
+</html>

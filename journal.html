@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reflection Journal | Robot Modeling | KCIS Virtual Learning</title>
+<meta name="description" content="Dated reflection journal entries for Robotics Foundations I: Robot Modeling.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+<!-- Marquee -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span class="marquee__item">ROBOTICS FOUNDATIONS I · ROBOT MODELING · KCIS VIRTUAL LEARNING &amp; DEVELOPMENT ·</span>
+    <span class="marquee__item">ROBOTICS FOUNDATIONS I · ROBOT MODELING · KCIS VIRTUAL LEARNING &amp; DEVELOPMENT ·</span>
+    <span class="marquee__item">ROBOTICS FOUNDATIONS I · ROBOT MODELING · KCIS VIRTUAL LEARNING &amp; DEVELOPMENT ·</span>
+    <span class="marquee__item">ROBOTICS FOUNDATIONS I · ROBOT MODELING · KCIS VIRTUAL LEARNING &amp; DEVELOPMENT ·</span>
+  </div>
+</div>
+
+<!-- Nav -->
+<header class="nav">
+  <div class="nav__inner">
+    <a class="logo-mark" href="index.html">
+      <span class="logo-mark__badge">R</span>
+      Robot Modeling
+    </a>
+    <nav class="pill-nav" aria-label="Primary">
+      <a class="pill-nav-btn" href="index.html">Home</a>
+      <a class="pill-nav-btn" href="course-log.html">Course Log</a>
+      <a class="pill-nav-btn" href="journal.html" aria-current="page">Reflection Journal</a>
+      <a class="pill-nav-btn" href="bio.html">Learner Bio</a>
+      <a class="pill-nav-btn" href="evidence.html">Evidence</a>
+    </nav>
+    <a class="cta-filled" href="course-log.html">View Course Log</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero hero--short band-sky section-pad">
+    <div class="hero__stage">
+
+      <svg class="ribbon" viewBox="0 0 1200 520" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <filter id="grain" x="-20%" y="-20%" width="140%" height="140%">
+            <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="noise"/>
+            <feColorMatrix in="noise" type="matrix"
+              values="0 0 0 0 0
+                      0 0 0 0 0
+                      0 0 0 0 0
+                      0 0 0 0.06 0" result="fadedNoise"/>
+            <feComposite in="fadedNoise" in2="SourceAlpha" operator="in" result="clippedNoise"/>
+            <feMerge>
+              <feMergeNode in="SourceGraphic"/>
+              <feMergeNode in="clippedNoise"/>
+            </feMerge>
+          </filter>
+        </defs>
+        <path d="M 40 380 C 260 480, 420 120, 620 180 S 960 420, 1160 140"
+              fill="none" stroke="#000000" stroke-width="92" stroke-linecap="round"/>
+        <path d="M 40 380 C 260 480, 420 120, 620 180 S 960 420, 1160 140"
+              fill="none" stroke="#4da2ff" stroke-width="80" stroke-linecap="round"
+              filter="url(#grain)"/>
+      </svg>
+
+      <div class="sticker" style="top:12%; left:8%; width:70px; height:70px; border-radius:20px; background:var(--color-lavender); transform:rotate(-10deg);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.6"><path d="M4 5h12a3 3 0 0 1 3 3v11H7a3 3 0 0 1-3-3V5Z" stroke-linejoin="round"/><path d="M8 10h7M8 14h5" stroke-linecap="round"/></svg>
+      </div>
+      <div class="sticker" style="bottom:14%; right:9%; width:64px; height:64px; border-radius:1600px; background:var(--color-sunburst); transform:rotate(9deg);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1.6"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg>
+      </div>
+
+      <span class="eyebrow" style="position:relative; z-index:2;">Reflection Journal</span>
+      <h1 class="display"><span>JOURNAL</span></h1>
+      <p class="tagline">Dated entries for Robotics Foundations I: what I worked on, what was hard, and what I'll do next.</p>
+    </div>
+  </section>
+
+  <!-- ENTRIES (newest first) -->
+  <section class="band-white section-pad">
+    <div class="wrap">
+      <div class="entries">
+
+        <article class="entry">
+          <div class="entry__head">
+            <span class="eyebrow">Week 11</span>
+            <span class="eyebrow">November 10</span>
+          </div>
+          <h3>1. What did I work on today?</h3>
+          <p>I studied orientation error for inverse kinematics algorithms. The lesson covered three ways to write it: Euler angles, angle and axis, and unit quaternions.</p>
+          <h3>2. What was challenging, and how did I handle it?</h3>
+          <p>Position error is a simple subtraction (e_P = p_d − p_e), but orientation error can't be done that way. The Euler angle method needs inverse formulas to get φ_e from R_e. The angle and axis method gives a shorter formula, e_O = r sin θ. I wrote the three methods side by side and noted what each one needs.</p>
+          <h3>3. How focused was I today? (1–4)</h3>
+          <p>3. I read through all three methods and wrote them out. I did not work an example with numbers.</p>
+          <h3>4. What will I do differently or keep doing next session?</h3>
+          <p>Work one orientation error example with the angle and axis method. Then check how the unit quaternion method differs.</p>
+        </article>
+
+        <article class="entry">
+          <div class="entry__head">
+            <span class="eyebrow">Week 9</span>
+            <span class="eyebrow">November 3</span>
+          </div>
+          <h3>1. What did I work on today?</h3>
+          <p>I studied inverse kinematics algorithms. These use the Jacobian to compute joint angles for a target tip position, one step at a time.</p>
+          <h3>2. What was challenging, and how did I handle it?</h3>
+          <p>I didn't understand why the Jacobian inverse method fails near a singularity. I connected it to the singularity lesson: det(J) goes to 0 there, so J can't be inverted. I wrote that next to the algorithm steps.</p>
+          <h3>3. How focused was I today? (1–4)</h3>
+          <p>3. I started on my own and finished the lesson. I did not run through an example by hand.</p>
+          <h3>4. What will I do differently or keep doing next session?</h3>
+          <p>Work one inverse kinematics example by hand on the two-link arm. Then start the equations of motion section.</p>
+        </article>
+
+        <article class="entry">
+          <div class="entry__head">
+            <span class="eyebrow">Week 8</span>
+            <span class="eyebrow">October 20</span>
+          </div>
+          <h3>1. What did I work on today?</h3>
+          <p>I studied redundancy in the Jacobian section. A robot is redundant when it has more joints than it needs for the task.</p>
+          <h3>2. What was challenging, and how did I handle it?</h3>
+          <p>I didn't get how a redundant arm can have many joint solutions for one tip position. I drew a planar arm with three links and moved the elbow while keeping the tip fixed. That showed me the extra joint gives the arm extra freedom.</p>
+          <h3>3. How focused was I today? (1–4)</h3>
+          <p>3. I started on my own and finished the lesson. I did not do a practice problem.</p>
+          <h3>4. What will I do differently or keep doing next session?</h3>
+          <p>Do one practice problem on redundancy. Then start the statics section.</p>
+        </article>
+
+        <article class="entry">
+          <div class="entry__head">
+            <span class="eyebrow">Week 7</span>
+            <span class="eyebrow">October 13</span>
+          </div>
+          <h3>1. What did I work on today?</h3>
+          <p>I worked on singularities in the Jacobian section. I looked at a two-link planar arm and how it reaches a singularity when the second joint angle is 0 or π.</p>
+          <h3>2. What was challenging, and how did I handle it?</h3>
+          <p>I didn't get why det(J) = a₁a₂s₂ meant the arm loses movement. I redrew the arm at θ₂ = 0 and saw that both links line up, so the tip can't move along the arm's length. That showed me why the two velocity vectors become parallel.</p>
+          <h3>3. How focused was I today? (1–4)</h3>
+          <p>3. I started on my own and finished the lesson. I did not try a practice problem afterward.</p>
+          <h3>4. What will I do differently or keep doing next session?</h3>
+          <p>Work through one practice problem on singularities before moving on. Keep drawing the arm whenever the equations don't make sense.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer__inner">
+    <span>Robotics Foundations I · Robot Modeling · KCIS Virtual Learning &amp; Development</span>
+    <a href="#top">Back to top ↑</a>
+  </div>
+</footer>
+
+</body>
+</html>
