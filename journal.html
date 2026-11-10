@@ -95,7 +95,7 @@
           <h3>1. What did I work on today?</h3>
           <p>I studied orientation error for inverse kinematics algorithms. The lesson covered three ways to write it: Euler angles, angle and axis, and unit quaternions.</p>
           <h3>2. What was challenging, and how did I handle it?</h3>
-          <p>Position error is a simple subtraction (e_P = p_d − p_e), but orientation error can't be done that way. The Euler angle method needs inverse formulas to get φ_e from R_e. The angle and axis method gives a shorter formula, e_O = r sin θ. I wrote the three methods side by side and noted what each one needs.</p>
+          <p>Orientation error was the hardest part this week. Position error is a simple subtraction (e_P = p_d − p_e). Orientation can't be subtracted that way, so the lesson gives three methods, and each has its own conditions. Euler angles need inverse formulas to get φ_e from R_e. Angle and axis gives e_O = r sin θ, but only for θ between −π/2 and π/2. Unit quaternions use ΔQ = Q_d * Q_e⁻¹. The formulas are long, and one equation has L, S(n), S(s), and S(a) in it. This is a hard course because each lesson depends on the earlier ones. These formulas only make sense with the Jacobian from before. I wrote the three methods side by side and noted what each one needs.</p>
           <h3>3. How focused was I today? (1–4)</h3>
           <p>3. I read through all three methods and wrote them out. I did not work an example with numbers.</p>
           <h3>4. What will I do differently or keep doing next session?</h3>
